@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Register Page
+{% endblock %}
+
+
+{% block content %}
+<body class = "text-center">
+    <div class = "container">
+        <br>
+        <h1> Regstration Form</h1>
+
+        <form method="POST" class = "form-register" style="color:white" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            {{ form.csrf_token }}
+
+            <br>
+
+            {{ form.email.label() }}
+            {{ form.email(class = "form-control", placeholder = "ID") }}
+
+            {{ form.password1.label() }}
+            {{ form.password1(class = "form-control", placeholder = "Password") }}
+
+            {{ form.password2.label() }}
+            {{ form.password2(class = "form-control", placeholder = "Confirm Password") }}
+
+            <br>
+            {{ form.submit(class = "btn btn-lg btn-block btn-primary")}}
+        </form>
+
+        <br>
+        <h6> Already have an account?</h6>
+        <a href=login><button class = "btn btn-lg btn-block btn-secondary">LOGIN</button></a></p>
+    </div>
+</body>
+{% endblock %}

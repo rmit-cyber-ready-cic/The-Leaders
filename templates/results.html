@@ -1,0 +1,24 @@
+{% extends 'main_page.html' %}
+
+{% block title %}
+CST
+{% endblock %}
+
+{% block body %}
+    <table class="table table-hover table-dark">
+    <thead>
+        <tr>
+            <th scope="col">Time</th>
+            <th scope="col">EmailID</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for item in unsafeEmails %}
+            <tr>
+            <td>{{item[0]}}</td>
+            <td>{{item[1]}}</td>
+        </tr>
+        {%endfor%}
+    </tbody>
+    </table>
+{% endblock %}

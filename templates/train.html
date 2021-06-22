@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Training Page
+{% endblock %}
+
+{% block content %}
+<div align="justify" style="padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px">
+<h1>You have been a victim of email phishing attack</h1>
+<br>
+<h4>Fake e-mail or phishing e-mails are the mail, making people believe that it comes from a legitimate source to steal personal information.</h4>
+<br>
+<h2>Countermeasures for Phishing attacks:</h2>
+<li>Network-level protection: This level of protection help us to restrict the IP addresses to enter the network, the most common name is the blacklist filter.</li>
+<ul>
+      <li>Anti-spam filters: Bulk e-mails are a potential threat. This technique helps us to identify the origin of the e-mail. These e-mails contain the false address of the user and information, which looks like it comes from a trusted source.</li>
+      <li>DNS- based blacklist: This blacklist uses DNS protocols. The DNS- blacklist requires attention from the internet service provider to update the list because it is reactive.</li>
+</ul>
+<li>Authentication: The authentication approach for both user and the server checks if the attacker pretends to be a legitimate sender; it is best user level and domain level.</li>
+<li>Classification of feature-based e-mail: Attackers embed the link in the e-mail, which ask the user to disclose the private data. It is the most common way which the attackers use to steal the data.</li>
+<ul>
+      <li>Link Feature: The link guard algorithm is used to identify the fake links in the e-mails, the actual link mentioned in the text used by the attackers to lure the users. </li>
+      <li>Structural Features:  To classify the e-mails before it reaches the user support vector machine is used to classify phishing e-mails.</li>
+</ul>
+<p>
+    <h2>Prevention of Phishing attacks </h2>
+    <li>Checking the grammar mistakes is very helpful to find an unnatural link, which helps us keep our data safe (Mario Ciprian Birlea 2020).</li>
+    <li>Containing the e-mail addresses could tell you about the source of the e-mail. Sometimes attacker uses the numeric number in the e-mail addresses, which shows that it is not from the trusted site (Mario Ciprian Birlea 2020).</li>
+    <li>The big organisations are rarely calling them with a generic greeting (Mario Ciprian Birlea 2020).</li>
+    <li>Some attackers send the mail, asking for urgent actions, such as updating the details by clicking the link; otherwise, their account will be disabled (Mario Ciprian Birlea 2020).</li>
+</p>
+<p>
+    <h2>Learning from the current example</h2>
+    <li>The email from where you got the email did not match the name it was sent from</li>
+    <img src="static/images/wrong_email.png" alt="Image of wrong email">
+    <li>There was no name in the email, there was just email address</li>
+    <img src="static/images/wrong_name.png" alt="Image of wrong name">
+</p>
+</div>
+{% endblock %}
